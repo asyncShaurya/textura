@@ -8,12 +8,6 @@ import imageRouter from './routes/imageRoutes.js'
 
 const app = express()
 
-// CORS Setup
-app.use(cors({
-  origin: 'http://localhost:5173', // or your frontend deployed domain
-  credentials: true,
-}))
-
 app.use(express.json())
 app.use(cors())
 await connectDB()
