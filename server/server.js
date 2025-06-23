@@ -8,6 +8,11 @@ import imageRouter from './routes/imageRoutes.js'
 
 const app = express()
 
+// CORS Setup
+app.use(cors({
+  origin: 'http://localhost:5173', // or your frontend deployed domain
+  credentials: true,
+}))
 
 app.use(express.json())
 app.use(cors())
@@ -19,8 +24,8 @@ app.get('/', (req, res)=> res.send("API Working"))
 
 if(process.env.NODE_ENV !== "production"){
     const PORT = process.env.PORT || 4000;
-    server.listen(PORT, ()=> console.log("Server is running on PORT: " + PORT));
+    app.listen(PORT, ()=> console.log("Server is running on PORT: " + PORT));
 }
 
 //Export server for vercel
-export default server;
+export default app;
