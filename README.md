@@ -305,23 +305,6 @@ VITE_BACKEND_URL=
 
 ---
 
-# 📷 Screenshots
-
-> Add application screenshots here
-
-```text
-screenshots/
-
-├── homepage.png
-├── login.png
-├── dashboard.png
-├── image-generation.png
-├── generated-image.png
-└── pricing.png
-```
-
----
-
 # 🎯 Learning Outcomes
 
 This project helped me gain practical experience with:
@@ -406,7 +389,7 @@ https://github.com/asyncShaurya
 
 ### LinkedIn
 
-https://linkedin.com/in/shauryasingh01
+https://linkedin.com/in/shaurya-singh-2811b432a
 
 ---
 
